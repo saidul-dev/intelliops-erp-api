@@ -42,8 +42,8 @@ class RolePermissionSeeder extends Seeder
         ]);
 
         // Assign roles to users
-        User::where('email', 'admin@gmail.com')->first()?->syncRoles('admin');
-        User::where('email', 'hr@gmail.com')->first()?->syncRoles('hr');
-        User::where('email', 'staff@gmail.com')->first()?->syncRoles('staff');
+        User::where('email', 'admin@example.com')->first()?->syncRoles('admin');
+        User::where('email', 'hr@example.com')->first()?->syncRoles('hr');
+        User::where('email', 'staff@example.com')->first()?->syncRoles('staff');
     }
 }
